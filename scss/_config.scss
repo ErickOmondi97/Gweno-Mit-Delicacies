@@ -1,0 +1,28 @@
+//FONT-COLOR
+$font-color-1: #fff;
+$font-color-hover: #ffe91e;
+
+//BACKGROUNG
+$bg-color-1: #f94626;
+$bg-color-2: #f02328;
+$bg-color-3: #000;
+$bg-color-4: #fff;
+
+//TRANSITION
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}
+
+//MAPS
+$font-weights: (
+  "small": 200,
+  "small-medium": 300,
+  "regular": 400,
+  "medium": 500,
+  "medium-large": 600,
+  "large": 700,
+  "extra-large": 800,
+  "extra-extra-large": 900
+);
+
+
