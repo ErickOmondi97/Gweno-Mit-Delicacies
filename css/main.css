@@ -9,14 +9,14 @@ header {
 header nav {
   width: 63%;
   height: 13%;
-  border: 1px solid #fff;
+  /* border: 1px solid $font-color-1; */
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header nav .logo {
-  width: 10%;
+  width: 15%;
 }
 header nav .ul_user {
   display: flex;
@@ -79,6 +79,60 @@ header nav .user li a img {
   border-radius: 30px;
   padding: 3px 4px;
   box-shadow: 0 5px 28px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+header section {
+  display: flex;
+  width: 63%;
+  height: 87%;
+  margin: auto;
+  border: 1px solid #fff;
+}
+header section .left_content_side, header section .right_food_side {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: 900;
+}
+header section .left_content_side h1 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-top: 70px;
+}
+header section .left_content_side p {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 20px 0px;
+  color: rgb(240, 240, 240);
+}
+header section .left_content_side button {
+  padding: 8px 50px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  background: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+header section .left_content_side button:hover {
+  box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+header section .left_content_side .dots {
+  display: flex;
+  margin-top: 50px;
+}
+header section .left_content_side .dots h6 {
+  width: 15px;
+  height: 6px;
+  border-radius: 10px;
+  background: #fa9b93;
+  margin-right: 5px;
   transition: all 0.3s ease-in-out;
 }
 
