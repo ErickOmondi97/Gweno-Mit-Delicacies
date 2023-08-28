@@ -4,6 +4,7 @@ header {
   height: 80vh;
   background: linear-gradient(90deg, $bg-color-1, $bg-color-2);
   overflow: hidden;
+  z-index: 2;
 
   nav {
     width: 63%;
@@ -101,13 +102,13 @@ header {
     width: 63%;
     height: 87%;
     margin: auto;
-    border: 1px solid $font-color-1;
+    /* border: 1px solid $font-color-1; */
 
     .left_content_side, .right_food_side {
       width: 50%;
       height: 100%;
       margin: auto;
-      border: 3px solid $font-color-1;
+      /* border: 3px solid $font-color-1; */
       color: $font-color-1;
       font-weight: map-get($font-weights, extra-extra-large);
     }
@@ -156,6 +157,77 @@ header {
           @include transition-ease;
         }        
       }
-    }    
+    }
+    
+    .right_food_side {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        position: absolute;
+        top: -18px;
+      }
+    }
+  }
+
+  .circle1 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: $font-color-5;
+    top: 100px;
+    border-radius: 50%;
+    left: 15%;
+    z-index: -1;
+  }
+
+  .ring1 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: none;
+    border: 20px solid $border-color-1;
+    top: -55px;
+    border-radius: 50%;
+    left: 45%;
+    z-index: -1;
+  }
+  
+  .ring2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: none;
+    border: 20px solid $border-color-2;
+    top: -55px;
+    border-radius: 50%;
+    left: 45%;
+    bottom: -35px ;
+    z-index: -1;
+  }
+  
+  .ring3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 70px solid $border-color-3;
+    border-radius: 50%;
+    left: -23%;
+    bottom: -15% ;
+    z-index: -1;
+  }
+
+  .redbox {
+    position: absolute;
+    width: 500px;
+    height: 900px;
+    background: linear-gradient(0deg, $bg-color-6);
+    border: 70px solid $border-color-3;
+    border-radius: 50%;
+    left: -23%;
+    bottom: -15% ;
+    z-index: -1;
   }
 }
