@@ -8,7 +8,7 @@ header {
   nav {
     width: 63%;
     height: 13%;
-    border: 1px solid $font-color-1;
+    /* border: 1px solid $font-color-1; */
     margin: auto;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ header {
     
 
     .logo {
-      width: 10%;
+      width: 15%;
       //height: 100%;
     }
 
@@ -94,5 +94,68 @@ header {
         }
       }
     }
+  }
+
+  section {
+    display: flex;
+    width: 63%;
+    height: 87%;
+    margin: auto;
+    border: 1px solid $font-color-1;
+
+    .left_content_side, .right_food_side {
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      border: 3px solid $font-color-1;
+      color: $font-color-1;
+      font-weight: map-get($font-weights, extra-extra-large);
+    }
+
+    .left_content_side {
+      h1 {
+      font-size: 35px;
+      line-height: 40px;
+      margin-top: 70px;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: map-get($font-weights, regular);
+        margin: 20px 0px;
+        color: rgb(240, 240, 240);
+      }
+
+      button {
+        padding: 8px 50px;
+        border: 2px solid $font-color-1;
+        border-radius: 20px;
+        color: $font-color-1;
+        background: none;
+        outline: none;
+        font-family: 'Poppins', sans-serif; font-weight: map-get($font-weights, extra-extra-large);
+        cursor: pointer;
+        box-shadow: 0px 5px 12px rgb(0, 0, 0, 0.2);
+        @include transition-ease;
+
+        &:hover {
+          box-shadow: inset 5px 5px 8px rgb(0, 0, 0, 0.4);
+        }
+      }
+
+      .dots {
+        display: flex;
+        margin-top: 50px;
+
+        h6{
+          width: 15px;
+          height: 6px;
+          border-radius: 10px;
+          background: $font-color-dots;
+          margin-right: 5px;
+          @include transition-ease;
+        }        
+      }
+    }    
   }
 }
