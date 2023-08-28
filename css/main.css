@@ -86,13 +86,13 @@ header section {
   width: 63%;
   height: 87%;
   margin: auto;
-  border: 1px solid #fff;
+  /* border: 1px solid $font-color-1; */
 }
 header section .left_content_side, header section .right_food_side {
   width: 50%;
   height: 100%;
   margin: auto;
-  border: 3px solid #fff;
+  /* border: 3px solid $font-color-1; */
   color: #fff;
   font-weight: 900;
 }
@@ -134,6 +134,20 @@ header section .left_content_side .dots h6 {
   background: #fa9b93;
   margin-right: 5px;
   transition: all 0.3s ease-in-out;
+}
+header section .right_food_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header section .right_food_side img {
+  position: absolute;
+  top: -18px;
+}
+header .circle1 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
 }
 
 * {
