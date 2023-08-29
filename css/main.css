@@ -5,6 +5,7 @@ header {
   height: 80vh;
   background: linear-gradient(90deg, #f94626, #f02328);
   overflow: hidden;
+  z-index: 2;
 }
 header nav {
   width: 63%;
@@ -148,6 +149,77 @@ header .circle1 {
   position: absolute;
   width: 140px;
   height: 140px;
+  background: #f8381e;
+  top: 100px;
+  border-radius: 50%;
+  left: 15%;
+  z-index: -1;
+}
+header .ring1 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: none;
+  border: 20px solid #fa5731;
+  top: -55px;
+  border-radius: 50%;
+  left: 45%;
+  z-index: -1;
+}
+header .ring2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: none;
+  border: 30px solid #f9482f;
+  border-radius: 50%;
+  left: -3%;
+  bottom: -35px;
+  z-index: -1;
+}
+header .ring3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: none;
+  border: 70px solid #e5100d;
+  border-radius: 50%;
+  top: -23%;
+  right: -15%;
+  z-index: -1;
+}
+header .red_box {
+  position: absolute;
+  width: 500px;
+  height: 900px;
+  background: linear-gradient(0deg, #d91213, #f82724);
+  border-radius: 70px;
+  top: -300px;
+  left: 70%;
+  transform: rotate(50deg);
+  z-index: -1;
+}
+
+.menu {
+  position: relative;
+  width: 65%;
+  height: 125px;
+  border: 1px solid #000;
+  margin: auto;
+}
+.menu_sec {
+  width: 92%;
+  height: 100%;
+  border: 1px solid #000;
+  margin: auto;
+}
+.menu_sec .card {
+  width: 115px;
+  height: 100%;
+  border: 1px solid #000;
+}
+.menu_sec .card img {
+  width: 100%;
 }
 
 * {
