@@ -208,24 +208,45 @@ header .red_box {
   margin: auto;
 }
 .menu_sec {
+  display: flex;
   width: 92%;
   height: 100%;
   border: 1px solid #000;
   margin: auto;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 .menu_sec .card {
-  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 115px;
   height: 100%;
   border: 1px solid #000;
+  font-size: 13px;
+  font-weight: 400;
+  color: #282727;
+  cursor: pointer;
 }
 .menu_sec .card img {
   width: 100%;
+}
+.menu_sec .card img .border {
+  position: absolute;
+}
+.menu_sec::-webkit-scrollbar {
+  display: none;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
