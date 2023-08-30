@@ -2,6 +2,7 @@
 @import './config';
 @import './header';
 @import './menustart';
+@import './card';
 
 * {
   padding: 0;
@@ -16,3 +17,5 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+//CARD IS ON THE MAIN BECAUSE IT DOES NOT RESPOND ON THE PARTIAL FILE
