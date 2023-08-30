@@ -204,14 +204,12 @@ header .red_box {
   position: relative;
   width: 65%;
   height: 125px;
-  border: 1px solid #000;
   margin: auto;
 }
 .menu_sec {
   display: flex;
   width: 92%;
   height: 100%;
-  border: 1px solid #000;
   margin: auto;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -223,20 +221,37 @@ header .red_box {
   flex-direction: column;
   min-width: 115px;
   height: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   font-size: 13px;
   font-weight: 400;
   color: #282727;
   cursor: pointer;
 }
 .menu_sec .card img {
-  width: 100%;
-}
-.menu_sec .card img .border {
-  position: absolute;
+  width: 65%;
 }
 .menu_sec::-webkit-scrollbar {
   display: none;
+}
+.menu_sec .border {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  background: #f02328;
+  width: 110px;
+  height: 5px;
+  border-radius: 30px;
+}
+.menu .left_arrow, .menu .right_arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  left: 0%;
+  top: 29%;
+}
+.menu .right_arrow {
+  left: 94%;
 }
 
 * {
