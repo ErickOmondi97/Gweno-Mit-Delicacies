@@ -144,7 +144,6 @@ header section .right_food_side {
 header section .right_food_side img {
   position: absolute;
   top: -18px;
-  transform: rotate(0deg);
 }
 header .circle1 {
   position: absolute;
@@ -282,6 +281,7 @@ header .red_box {
   position: relative;
   width: 100%;
   height: 500px;
+  margin-top: 15px;
   background: linear-gradient(0deg, #f2dfd1, rgb(243, 210, 183));
   overflow: hidden;
   z-index: 2;
@@ -318,6 +318,8 @@ header .red_box {
   border: 1px solid #000;
 }
 .card_bx .cards_bx1 .card {
+  display: flex;
+  position: relative;
   width: 280px;
   height: 170px;
   /* border: 1px solid #000; */
@@ -327,8 +329,44 @@ header .red_box {
   color: #282727;
   overflow: hidden;
 }
+.card_bx .cards_bx1 .card img {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  right: 0;
+  z-index: 1;
+}
+.card_bx .cards_bx1 .card .content {
+  padding: 15px 0 15px 20px;
+  z-index: 1000;
+}
+.card_bx .cards_bx1 .card .content h2 {
+  font-size: 20px;
+  line-height: 25px;
+}
+.card_bx .cards_bx1 .card .content p {
+  font-size: 10px;
+  line-height: 15px;
+  color: #3f3f3f;
+  margin: 7px 0px;
+  font-weight: 600;
+}
+.card_bx .cards_bx1 .card .content h4 {
+  color: #f02328;
+  font-weight: 600;
+}
 .card_bx .cards_bx1 .card_b {
   width: 420px;
+}
+.card_bx .cards_bx1 .card_b img {
+  position: absolute;
+  width: 45%;
+}
+.card_bx .cards_bx1 .card2 {
+  background: #fc2e46;
+}
+.card_bx .cards_bx1 .card3 {
+  background: #fbfbfb;
 }
 
 * {
