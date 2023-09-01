@@ -84,6 +84,21 @@
           color: $bg-color-2;
           font-weight: map-get($font-weights, medium-large);
         }
+
+        .dots {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          h2 {
+            width: 15px;
+            height: 6px;
+            background: $bg-color-12;
+            border-radius: 10px;
+            margin-right: 5px;
+            @include transition-ease;
+          }
+        }
       }
     }
 
