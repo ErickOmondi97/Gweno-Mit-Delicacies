@@ -355,6 +355,19 @@ header .red_box {
   color: #f02328;
   font-weight: 600;
 }
+.card_bx .cards_bx1 .card .content .dots {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.card_bx .cards_bx1 .card .content .dots h2 {
+  width: 15px;
+  height: 6px;
+  background: #ffecb2;
+  border-radius: 10px;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
 .card_bx .cards_bx1 .card_b {
   width: 420px;
 }
