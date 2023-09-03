@@ -97,6 +97,12 @@
             border-radius: 10px;
             margin-right: 5px;
             @include transition-ease;
+
+            &:nth-child(2) {
+              width: 20px;
+              height: 8px;
+              background: $font-color-dots-1;
+            }
           }
         }
       }
