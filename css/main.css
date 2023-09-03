@@ -368,6 +368,11 @@ header .red_box {
   margin-right: 5px;
   transition: all 0.3s ease-in-out;
 }
+.card_bx .cards_bx1 .card .content .dots h2:nth-child(2) {
+  width: 20px;
+  height: 8px;
+  background: #ffc100;
+}
 .card_bx .cards_bx1 .card_b {
   width: 420px;
 }
