@@ -383,6 +383,15 @@ header .red_box {
 .card_bx .cards_bx1 .card2 {
   background: #fc2e46;
 }
+.card_bx .cards_bx1 .card2 .content {
+  color: #fff;
+}
+.card_bx .cards_bx1 .card2 p {
+  color: #fff;
+}
+.card_bx .cards_bx1 .card2 h4 {
+  color: #fff;
+}
 .card_bx .cards_bx1 .card3 {
   background: #fbfbfb;
 }
