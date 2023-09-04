@@ -119,6 +119,17 @@
 
     .card2 {
       background: $bg-color-10;
+
+      .content {
+        color: $font-color-1;
+      }
+      p {
+        color: $font-color-1;
+      }
+      
+      h4 {
+        color: $font-color-1;
+      }
     }
     
     .card3 {
