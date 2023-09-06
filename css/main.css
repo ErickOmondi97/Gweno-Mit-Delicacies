@@ -250,6 +250,7 @@ header .red_box {
   left: 0%;
   top: 29%;
   cursor: pointer;
+  visibility: visible;
 }
 .menu .right_arrow {
   left: 94%;
@@ -484,8 +485,33 @@ header .red_box {
   position: relative;
   width: 35%;
   height: 100%;
-  border: 1px solid #000;
   z-index: 2;
+}
+.app_box1 .app_img img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 120%;
+  top: -25px;
+  filter: drop-shadow(-5px 8px 5px rgba(48, 48, 48, 0.4));
+  z-index: 2;
+}
+.app_box1 .app_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.app_box1 .app_content h1 {
+  color: #fff;
+  line-height: 30px;
+  font-size: 25px;
+}
+.app_box1 .app_content .app-imgs {
+  margin: 20px;
+}
+.app_box1 .app_content .app-imgs img {
+  width: 150px;
+  filter: drop-shadow(2px 5px 4px rgba(48, 48, 48, 0.4));
 }
 .app_box::after {
   position: absolute;
@@ -496,12 +522,6 @@ header .red_box {
   bottom: -118px;
   left: 12%;
   z-index: 1;
-}
-.app_box::after .app_img {
-  position: relative;
-  height: 120%;
-  top: -25px;
-  filter: drop-shadow(-5px 8px 5px rgba(48, 48, 48, 0.4));
 }
 
 * {
