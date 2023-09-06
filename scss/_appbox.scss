@@ -32,8 +32,41 @@
       position: relative;
       width: 35%;
       height: 100%;
-      border: 1px solid $bg-color-3;
+      //border: 1px solid $bg-color-3;
       z-index: 2;
+    }
+
+    .app_img {
+      img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 120%;
+        top: -25px;
+        filter: drop-shadow(-5px 8px 5px rgb(48, 48, 48, 0.4));
+        z-index: 2;
+      }
+    }
+
+    .app_content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        color: $font-color-1;
+        line-height: 30px;
+        font-size: 25px
+      }
+
+      .app-imgs {
+        margin: 20px;
+
+        img {
+          width: 150px;
+          filter: drop-shadow(2px 5px 4px rgb(48, 48, 48, 0.4));
+        }
+      }
     }
   }
 
@@ -46,12 +79,5 @@
     bottom: -118px;
     left: 12%;
     z-index: 1;
-
-    .app_img {
-      position: relative;
-      height: 120%;
-      top: -25px;
-      filter: drop-shadow(-5px 8px 5px rgb(48, 48, 48, 0.4));
-    }
   }
 }
