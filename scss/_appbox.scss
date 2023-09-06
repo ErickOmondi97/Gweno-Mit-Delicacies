@@ -1,0 +1,57 @@
+.app_box {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(0deg, rgb(243, 210, 183), $bg-color-9);
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: rgb(230, 230, 230, 0.4);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 22%;
+    z-index: 1;
+    transform: skewX(45deg);
+  }
+
+  &1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: $bg-color-16;
+
+    .app_img, .app_content {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 35%;
+      height: 100%;
+      border: 1px solid $bg-color-3;
+      z-index: 2;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: rgb(230, 230, 230, 0.4);
+    bottom: -118px;
+    left: 12%;
+    z-index: 1;
+
+    .app_img {
+      position: relative;
+      height: 120%;
+      top: -25px;
+      filter: drop-shadow(-5px 8px 5px rgb(48, 48, 48, 0.4));
+    }
+  }
+}

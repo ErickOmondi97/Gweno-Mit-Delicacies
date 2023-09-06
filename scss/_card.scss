@@ -1,0 +1,210 @@
+.card_bx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-top: 15px;
+  background: linear-gradient(0deg, $bg-color-9, rgb(243,210,183));
+  overflow: hidden;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border: 60px solid rgb(185, 105, 105, 0.1);
+    border-radius: 50%;
+    top: -10px;
+    left: -90px;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border: rgb(185, 105, 105, 0.1);
+    border-radius: 50%;
+    top: -15%;
+    right: -7%;
+    z-index: -1;
+  }
+
+  .cards_bx1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 65%;
+    height: 75%;
+    //border: 1px solid #000;
+
+    .card {
+      display: flex;
+      position: relative;
+      width: 280px;
+      height: 170px;
+      /* border: 1px solid #000; */
+      border-radius: 10px;
+      box-shadow: 0px 7px 12px $bs-color-2;
+      background: #fff;
+      color: $font-color-2;
+      overflow: hidden;
+      
+      img {
+        position: absolute;
+        width: 65%;
+        height: 100%;
+        right: 0;
+        z-index: 1;
+      }
+
+      .content {
+        padding: 15px 0 15px 20px;
+        z-index: 1000;
+
+        h2 {
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        p {
+          font-size: 10px;
+          line-height: 15px;
+          color: $font-color-3;
+          margin: 7px 0px;
+          font-weight: map-get($font-weights, medium-large);
+        }
+        
+        h4 {
+          color: $bg-color-2;
+          font-weight: map-get($font-weights, medium-large);
+        }
+
+        .dots {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+
+          h2 {
+            width: 15px;
+            height: 6px;
+            background: $bg-color-12;
+            border-radius: 10px;
+            margin-right: 5px;
+            @include transition-ease;
+
+            &:nth-child(2) {
+              width: 20px;
+              height: 8px;
+              background: $font-color-dots-1;
+            }
+          }
+        }
+      }
+    }
+
+    .card_b {
+      width: 420px;
+
+      img {
+        position: absolute;
+        width: 45%;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        a {
+          text-decoration: none;
+          background: $bg-color-15;
+          color: $font-color-1;
+          font-size: 13px;
+          padding: 5px 20px;
+          border-radius: 20px;
+          @include transition-ease;
+
+          &:hover {
+            background: $bg-color-13;
+          }
+        }
+      }
+    }
+
+    .card2 {
+      background: $bg-color-10;
+
+      .content {
+        color: $font-color-1;
+
+        p {
+          color: $font-color-1;
+        }
+        
+        h4 {
+          color: $font-color-1;
+        }
+
+        .dots{
+          h2 {
+            background: $bg-color-13;
+
+            &:nth-child(1) {
+              width: 20px;
+              height: 8px;
+              background: $bg-color-14;
+            }
+            &:nth-child(2) {
+              width: 15px;
+              height: 6px;
+              background: $bg-color-13;
+            }
+          }
+        }
+      }
+      
+    }
+    
+    .card3 {
+      background: $bg-color-11;
+
+      .content {
+        color: $font-color-1;
+
+        p {
+          color: $font-color-1;
+        }
+        
+        h4 {
+          color: $font-color-1;
+        }
+
+        .dots{
+          h2 {
+            font-size: 19px;
+            line-height: 22px;
+            margin-bottom: 55px;
+            
+            &:nth-child(1) {
+              width: 20px;
+              height: 8px;
+              background: $font-color-dots-1;
+            }
+            &:nth-child(2) {
+              width: 15px;
+              height: 6px;
+              background: $bg-color-12;
+            }
+          }
+        }
+      }
+    }
+  }
+}

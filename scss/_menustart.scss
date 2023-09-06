@@ -1,0 +1,85 @@
+.menu {
+  position: relative;
+  width: 65%;
+  height: 125px;
+  //border: 1px solid #000;
+  margin: auto;
+
+  &_sec {
+    display: flex;
+    width: 92%;
+    height: 100%;
+    //border: 1px solid #000;
+    margin: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-width: 115px;
+      height: 100%;
+      /* border: 1px solid #000; */
+      font-size: 13px;
+      font-weight: map-get($font-weights, regular);
+      color: $font-color-2;
+      cursor: pointer;
+
+      img {
+        width: 65%;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .border {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      background: $bg-color-2;
+      width: 110px;
+      height: 5px;
+      border-radius: 30px;
+    }
+  }
+
+  .left_arrow, .right_arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    left: 0%;
+    top: 29%;
+    cursor: pointer;
+  }
+
+  .right_arrow {
+    left: 94%;
+
+  }
+
+  h4 {
+    position: absolute;
+    top: -15px;
+    left: 45%;
+    font-size: 13px;
+    font-weight: map-get($font-weights, medium-large);
+    color: #fff;
+    background: $bg-color-8;
+    padding: 5px 25px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px $bs-color-1;
+    cursor: pointer;
+    @include transition-ease;
+    z-index: 1000;
+
+    &:hover {
+      background: $bg-color-2;
+      box-shadow: none;
+    }
+  }
+}

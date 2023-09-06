@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './config';
+@import './header';
+@import './menustart';
+@import './card';
+@import './appbox';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+//CARD IS ON THE MAIN BECAUSE IT DOES NOT RESPOND ON THE PARTIAL FILE
