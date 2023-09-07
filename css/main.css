@@ -516,12 +516,123 @@ header .red_box {
 .app_box::after {
   position: absolute;
   content: "";
-  width: 250px;
-  height: 250px;
-  background: rgba(230, 230, 230, 0.4);
+  width: 100px;
+  height: 100px;
+  border: 50px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   bottom: -118px;
   left: 12%;
   z-index: 1;
+}
+
+.socials {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  background: linear-gradient(0deg, #f2dfd1, rgb(241, 210, 183));
+  overflow: hidden;
+}
+.socials::before {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), #f2dfd1);
+  border-radius: 58%;
+  bottom: 0;
+  left: -50px;
+}
+.socials::after {
+  position: absolute;
+  content: "";
+  width: 250px;
+  height: 250px;
+  border: 40px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  top: -35%;
+  right: -8%;
+}
+.socials .socials1 {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  border: 1px solid #000;
+}
+.socials .socials2 {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  border: 1px solid #000;
+  margin: auto;
+}
+.socials .socials2 .social_box, .socials .socials2 .social_video_box {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  border: 1px solid #000;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.socials .socials2 .social_box::before {
+  position: absolute;
+  content: "SOCIAL";
+  width: 200px;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 40px;
+  top: -45px;
+}
+.socials .socials2 .social_box .twitter {
+  position: relative;
+  width: 260px;
+  height: 80px;
+  background: #fff;
+  border-radius: 20px 10px 10px 10px;
+  padding-left: 15px;
+}
+.socials .socials2 .social_box .twitter img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  background: #21b6fc;
+  border-radius: 50%;
+  box-shadow: 0 8px 8px #d0edfa, 8px 0px 8px #d0edfa;
+  left: 0;
+}
+.socials .socials2 .social_box .twitter h3 {
+  font-size: 15px;
+  padding: 10px 0px 5px 0px;
+  margin-left: 30px;
+}
+.socials .socials2 .social_box .twitter p {
+  font-size: 11px;
+  padding-right: 25px;
+  color: #505050;
+}
+.socials .socials2 .social_box .twitter p span {
+  color: #50bffb;
+}
+.socials .socials2 .social_box .facebook {
+  position: relative;
+  width: 160px;
+  height: 170px;
+  background: #fff;
+  border-radius: 20px 10px 10px 10px;
+}
+.socials .socials2 .social_video_box::before {
+  position: absolute;
+  content: "VIDEO";
+  width: 200px;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 40px;
+  top: -45px;
 }
 
 * {
@@ -536,4 +647,18 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+/* ::selection {
+  background: $bg-color-10;
+  color: $bg-color-8;
+} */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #fc2e46;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc41e;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
