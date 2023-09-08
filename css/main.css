@@ -613,6 +613,7 @@ header .red_box {
   font-size: 11px;
   padding-right: 25px;
   color: #505050;
+  margin-left: 30px;
 }
 .socials .socials2 .social_box .twitter p span {
   color: #50bffb;
@@ -623,6 +624,25 @@ header .red_box {
   height: 170px;
   background: #fff;
   border-radius: 20px 10px 10px 10px;
+  box-shadow: 0px 7px 12px #ffdfbd;
+}
+.socials .socials2 .social_box .facebook img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  background: #2e86de;
+  border-radius: 50%;
+  box-shadow: 0 8px 8px #bedcfb, 8px 0px 8px #fccccc;
+  left: 0;
+}
+.socials .socials2 .social_box .instagram {
+  position: absolute;
+  width: 160px;
+  height: 170px;
+  background: #ee5353;
+  border-radius: 20px 10px 10px 10px;
+  box-shadow: 0px 7px 12px #ffdfbd;
 }
 .socials .socials2 .social_video_box::before {
   position: absolute;
