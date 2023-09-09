@@ -246,11 +246,11 @@ header .red_box {
   position: absolute;
   width: 50px;
   height: 50px;
+  color: #ffc100;
   padding: 5px;
   left: 0%;
   top: 29%;
   cursor: pointer;
-  visibility: visible;
 }
 .menu .right_arrow {
   left: 94%;
@@ -427,7 +427,7 @@ header .red_box {
   background: #fbfbfb;
 }
 .card_bx .cards_bx1 .card3 .content {
-  color: #fff;
+  color: #282727;
 }
 .card_bx .cards_bx1 .card3 .content p {
   color: #fff;
@@ -594,7 +594,7 @@ header .red_box {
   border-radius: 20px 10px 10px 10px;
   padding-left: 15px;
 }
-.socials .socials2 .social_box .twitter img {
+.socials .socials2 .social_box .twitter i {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -606,12 +606,11 @@ header .red_box {
 }
 .socials .socials2 .social_box .twitter h3 {
   font-size: 15px;
-  padding: 10px 0px 5px 0px;
+  padding: 10px 0px 0px 0px;
   margin-left: 30px;
 }
 .socials .socials2 .social_box .twitter p {
   font-size: 11px;
-  padding-right: 25px;
   color: #505050;
   margin-left: 30px;
 }
@@ -626,7 +625,7 @@ header .red_box {
   border-radius: 20px 10px 10px 10px;
   box-shadow: 0px 7px 12px #ffdfbd;
 }
-.socials .socials2 .social_box .facebook img {
+.socials .socials2 .social_box .facebook i {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -636,13 +635,82 @@ header .red_box {
   box-shadow: 0 8px 8px #bedcfb, 8px 0px 8px #fccccc;
   left: 0;
 }
+.socials .socials2 .social_box .facebook h3 {
+  font-size: 15px;
+  padding: 10px 0px 10px 45px;
+}
+.socials .socials2 .social_box .facebook p {
+  font-size: 11px;
+  padding: 10px 10px 10px 25px;
+  color: #585858;
+}
+.socials .socials2 .social_box .facebook p span {
+  color: #21b6fc;
+}
 .socials .socials2 .social_box .instagram {
-  position: absolute;
+  position: relative;
   width: 160px;
   height: 170px;
-  background: #ee5353;
+  background: #fff;
   border-radius: 20px 10px 10px 10px;
   box-shadow: 0px 7px 12px #ffdfbd;
+}
+.socials .socials2 .social_box .instagram i {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  background: #ee5353;
+  border-radius: 50%;
+  box-shadow: 0 8px 8px #bedcfb, 8px 0px 8px #fccccc;
+  left: 0;
+}
+.socials .socials2 .social_box .instagram .img_box_insta {
+  width: 120px;
+  height: 110px;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  box-shadow: unset;
+  margin: 50px 10px 0px 22px;
+}
+.socials .socials2 .social_box .instagram .chicken_box {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  bottom: 10px;
+  left: 22px;
+  background: rgba(185, 185, 185, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.socials .socials2 .social_box .instagram h6 {
+  color: #fff;
+  text-align: center;
+  padding: 4px 0px;
+  line-height: 12px;
+}
+.socials .socials2 .social_box .instagram h6 span {
+  color: #ffb536;
+}
+.socials .socials2 .social_box .socials_dots {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.socials .socials2 .social_box .socials_dots h2 {
+  width: 15px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ffe18e;
+  margin-right: 5px;
+}
+.socials .socials2 .social_box .socials_dots h2:nth-child(1) {
+  width: 20px;
+  height: 10px;
+  background: #ffd24e;
 }
 .socials .socials2 .social_video_box::before {
   position: absolute;
@@ -653,6 +721,14 @@ header .red_box {
   font-weight: bold;
   font-size: 40px;
   top: -45px;
+}
+.socials .socials2 .social_video_box .video {
+  position: relative;
+  width: 450px;
+  height: 265px;
+  border: 8px solid #fff;
+  margin-left: 10px;
+  background: #000;
 }
 
 * {
