@@ -72,7 +72,7 @@
         border-radius: 20px 10px 10px 10px;
         padding-left: 15px;
 
-        img {
+        i {
           position: absolute;
           width: 35px;
           height: 35px;
@@ -85,13 +85,13 @@
 
         h3 {
           font-size: 15px;
-          padding: 10px 0px 5px 0px;
+          padding: 10px 0px 0px 0px;
           margin-left: 30px;
         }
 
         p {
           font-size: 11px;
-          padding-right: 25px;
+          //padding-right: 25px;
           color: #505050;
           margin-left: 30px;
 
@@ -110,7 +110,7 @@
         border-radius: 20px 10px 10px 10px;
         box-shadow: 0px 7px 12px $bs-color-2;
 
-        img {
+        i {
           position: absolute;
           width: 35px;
           height: 35px;
@@ -119,17 +119,96 @@
           border-radius: 50%;
           box-shadow: 0 8px 8px #bedcfb, 8px 0px 8px #fccccc;
           left: 0;
+        } 
+        
+        h3 {
+          font-size: 15px;
+          padding: 10px 0px 10px 45px;
 
+        }
+
+        p {
+          font-size: 11px;
+          padding: 10px 10px 10px 25px;
+          color: #585858;
+          span {
+            color: #21b6fc;
+          }
+        }
+      }
+      
+      .instagram {
+        position: relative;
+        width: 160px;
+        height: 170px;
+        background: $bg-color-4;
+        border-radius: 20px 10px 10px 10px;
+        box-shadow: 0px 7px 12px $bs-color-2;
+
+        i {
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          padding: 8px;
+          background: #ee5353;
+          border-radius: 50%;
+          box-shadow: 0 8px 8px #bedcfb, 8px 0px 8px #fccccc;
+          left: 0;
+        }
+
+        .img_box_insta {
+          width: 120px;
+          height: 110px;
+          border-radius: 0;
+          background: none;
+          padding: 0;
+          box-shadow: unset;
+          margin: 50px 10px 0px 22px;
+        }
+
+        .chicken_box {
+         position: absolute;
+         width: 120px;
+         height: 30px;
+         bottom: 10px;
+         left: 22px;
+         background: rgb(185, 185, 185, 0.1);
+         backdrop-filter: blur(5px);   
+        }
+
+        h6 {
+          color: $font-color-1;
+          text-align: center;
+          padding: 4px 0px;
+          line-height: 12px;
+
+          span {
+            color: $bg-color-16;
+          }
         }
       }
 
-      .instagram {
-        position: absolute;
-        width: 160px;
-        height: 170px;
-        background: #ee5353;
-        border-radius: 20px 10px 10px 10px;
-        box-shadow: 0px 7px 12px $bs-color-2;
+      .socials_dots {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+
+        h2 {
+          width: 15px;
+          height: 6px;
+          border-radius: 10px;
+          background: $bg-color-18;
+          margin-right: 5px;
+
+          &:nth-child(1) {
+            width: 20px;
+            height: 10px;
+            background:  $bg-color-19;
+
+          }
+        }
       }
     }
 
@@ -142,6 +221,30 @@
         font-weight: bold;
         font-size: 40px;
         top: -45px;
+      }
+
+      .video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 450px;
+        height: 265px;
+        border: 8px solid $font-color-1;
+        margin-left: 10px;
+        background: #000;
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;          
+        }
+
+        .play {
+          position: relative;
+        }
       }
     }
 
