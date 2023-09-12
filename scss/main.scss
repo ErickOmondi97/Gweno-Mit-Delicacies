@@ -5,6 +5,8 @@
 @import './card';
 @import './appbox';
 @import './socials';
+@import './address';
+@import './footer';
 
 * {
   padding: 0;
@@ -34,6 +36,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: $bg-color-8;
   border-radius: 10px;
+  height: 5px;
 }
 
 //CARD IS ON THE MAIN BECAUSE IT DOES NOT RESPOND ON THE PARTIAL FILE
