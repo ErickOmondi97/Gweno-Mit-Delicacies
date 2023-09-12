@@ -39,14 +39,14 @@
     position: relative;
     width: 80%;
     height: 100%;
-    border: 1px solid #000;
+    //border: 1px solid #000;
     margin: auto;
 
     .social_box, .social_video_box {
       position: relative;
       width: 50%;
       height: 70%;
-      border: 1px solid #000;
+      //border: 1px solid #000;
       margin-top: 100px;
       display: flex;
       justify-content: space-between;
@@ -244,6 +244,13 @@
 
         .play {
           position: relative;
+          cursor: pointer;
+        }
+        
+        .pause {
+          position: relative;
+          display: none;
+          cursor: pointer;
         }
       }
     }
