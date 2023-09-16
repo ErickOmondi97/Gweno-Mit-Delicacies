@@ -146,6 +146,7 @@ header {
 
       .dots {
         display: flex;
+        align-items: center;
         margin-top: 50px;
 
         h6{
@@ -155,7 +156,13 @@ header {
           background: $font-color-dots;
           margin-right: 5px;
           @include transition-ease;
-        }        
+        }
+        
+        .head_dots_main {
+          width: 20px;
+          height: 8px;
+          background: $font-color-1;
+        }
       }
     }
     
