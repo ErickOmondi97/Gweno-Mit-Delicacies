@@ -25,21 +25,29 @@ address {
       justify-content: flex-end;
 
       a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 35px;
         height: 35px;
         border: 3px solid $font-color-1;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-left: 10px;
+        text-decoration: none;
+              
 
-        &:hover {
+        i {
+          font-size: 20px;
+          color: $font-color-1;
+          background: none;
           transform: rotate(360deg);
-        }
-        img {
-          width: 20px;
-          height: 20px;          
+          @include transition-ease; 
+
+          &:hover {
+            transform: rotate(360deg);
+            color: $bg-color-8;
+            transform: scale(1.1);
+          }
         }
       }
     }
