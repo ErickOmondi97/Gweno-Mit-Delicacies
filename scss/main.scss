@@ -7,6 +7,7 @@
 @import './socials';
 @import './address';
 @import './footer';
+@import './responsiveness';
 
 * {
   padding: 0;
@@ -40,3 +41,18 @@ body {
 }
 
 //CARD IS ON THE MAIN BECAUSE IT DOES NOT RESPOND ON THE PARTIAL FILE
+
+/* JAVA CLASSES */
+header {
+  section {
+    .left_content_side {
+      .dots {
+        .head_dots_main {
+          width: 20px;
+          height: 8px;
+          background: $font-color-1;
+        }
+      }
+    }
+  }
+}
